@@ -620,6 +620,8 @@ export default class DynamicTable {
             } else {
                 this.insert(0);
             }
+            this.changed = true;
+            this._updateInfoStr();
         });
 
         var removeBtn = document.createElement('button');
@@ -630,7 +632,8 @@ export default class DynamicTable {
             if (this.activeRow !== undefined) {
                 this.remove(this.activeRow);
             }
-
+            this.changed = true;
+            this._updateInfoStr();
         });
 
         var saveBtn = document.createElement('button');
