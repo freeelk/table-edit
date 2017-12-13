@@ -1,0 +1,98 @@
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #333;
+}
+
+.container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.dynamicTableContainer {
+  margin-bottom: 30px;
+  background: #FFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.dynamicTableContainer:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.table-header {
+  font-size: 130%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dynamicTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.buttons-container {
+  margin: 2px;
+}
+
+.buttons-container button:hover {
+  cursor: pointer;
+}
+
+.info-str {
+  float: right;
+  margin: 2px;
+}
+
+th.sorted:before {
+  content: "\f0dd";
+  padding: 2px;
+  font-family: FontAwesome;
+}
+
+th.sorted-rev:before {
+  content: "\f0de";
+  padding: 2px;
+  font-family: FontAwesome;
+}
+
+tr.active-row {
+  background: #cccccc;
+}
+
+td.active-field {
+  background: #4f5150;
+  color: #ffffff;
+}
+
+th.header-cell:hover {
+  cursor: pointer;
+}
+
+td.table-cell {
+  height: 20px;
+  border: 1px solid #cccccc;
+  padding: 2px;
+}
+
+td.filter-cell {
+  height: 20px;
+  border: 1px solid #cccccc;
+  background-color: aliceblue;
+}
+
+.alert-text {
+  color: red;
+}
+
+.error-container {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid red;
+  color: red;
+}
